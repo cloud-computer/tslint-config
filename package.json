@@ -1,0 +1,41 @@
+{
+  "dependencies": {
+    "tslint-config-standard": "~8.0.1",
+    "tslint-eslint-rules": "~5.4.0"
+  },
+  "description": "A TSLint config",
+  "devDependencies": {
+    "lerna": "^3.13.1",
+    "mongoose": "^5.4.19",
+    "ts-node": "^8.0.3",
+    "tslint": "~5.14.0",
+    "typescript": "^3.2.1"
+  },
+  "files": [
+    "tslint.js"
+  ],
+  "keywords": [
+    "tslint",
+    "config",
+    "standard",
+    "standardjs",
+    "typescript",
+    "ts"
+  ],
+  "main": "tslint.js",
+  "name": "@cloud-computer/tslint-config",
+  "peerDependencies": {
+    "tslint": "5",
+    "typescript": "3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloud-computer/tslint-config"
+  },
+  "scripts": {
+    "build": "ts-node scripts/build.ts",
+    "preversion": "npm test",
+    "test": "tslint -c tslint.js --project tsconfig.json"
+  },
+  "version": "0.0.1"
+}
